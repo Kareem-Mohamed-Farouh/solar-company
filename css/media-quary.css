@@ -71,10 +71,11 @@
         justify-content: center;
 
         li a {
+          padding: 8px 18px;
           width: 100%;
+          font-size: small;
         }
       }
-
       .call-number {
         width: 100%;
         gap: 8px;
@@ -86,140 +87,157 @@
       }
     }
   }
+}
 
-  main {
-    #home {
-      padding: 0px 10px;
-      .home-text {
-        width: 100%;
-
-        h2 {
-          font-size: 42px;
-        }
-      }
-    }
-    #trade {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      .trade-text {
-        gap: 50px;
-        width: 100%;
-        order: 2;
-      }
-
-      .trade-image {
-        width: 100%;
-
-        .one {
-          width: 70%;
-          margin-left: auto;
-
-          display: block;
-          object-fit: cover;
-          border-radius: 20px;
-        }
-        .two {
-          width: 40%;
-          position: absolute;
-          bottom: 5%;
-          left: 25%;
-        }
-      }
-    }
-
-    #power {
-      .header-power {
-        width: 80%;
-        text-align: left;
-      }
-    }
-
-    #repairs {
-      padding: 30px 20px;
-      .bg-repairs {
-        margin: 0.1rem;
-        background-color: hsla(180, 9%, 2%, 0.354);
-        padding: 10px;
-      }
-      p {
-        font-size: 12px;
-        font-weight: 400;
-      }
-    }
-
-    #energy {
-      display: flex;
-      flex-wrap: wrap;
+main {
+  #home {
+    padding: 0px 10px;
+    .home-text {
       width: 100%;
-      gap: 30px;
-      .text-energy {
-        width: 80%;
-      }
-      .energy-cards {
-        width: 100%;
 
-        .energy-card {
-          margin-left: auto;
-          margin-right: auto;
-          width: 100%;
-        }
+      h2 {
+        font-size: 42px;
       }
     }
-    #solar-kit {
-      .card {
-        width: calc(100% / 1- 30px);
-      }
+  }
+  #trade {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    .trade-text {
+      gap: 50px;
+      width: 100%;
+      order: 2;
     }
-    #about {
-      .about-card-one {
-        flex-direction: row;
-        width: 90%;
+
+    .trade-image {
+      width: 100%;
+
+      .one {
+        width: 70%;
+        margin-left: auto;
+
+        display: block;
+        object-fit: cover;
+        border-radius: 20px;
       }
-      .about-card-two {
-        padding: 20px 0px;
-        width: 100%;
-
-        .width-70 {
-          width: 80%;
-        }
-
-        .gap-50 {
-          gap: 15px;
-        }
-        .width-20 {
-          width: 10%;
-        }
-
-        .about-text {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 140%;
-          margin: 0px 0px;
-          text-align: start;
-        }
+      .two {
+        width: 40%;
+        position: absolute;
+        bottom: 5%;
+        left: 25%;
       }
     }
   }
 
-  #footer {
-    .container {
-      display: flex;
+  #power {
+    .header-power {
+      width: 80%;
+      text-align: left;
+    }
+  }
+
+  #repairs {
+    gap: 0.625rem;
+    padding: 30px 10px;
+    .bg-repairs {
+      margin: 0.1rem;
+      background-color: hsla(180, 9%, 2%, 0.354);
+      padding: 10px;
+    }
+    p {
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+
+  #energy {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    .text-energy {
+      width: 80%;
+    }
+    .energy-cards {
+      width: 100%;
+
+      .energy-card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+  }
+  #solar-kit {
+    .card {
+      width: calc(100% / 1- 30px);
+    }
+  }
+  #about {
+    .about-card-one {
+      flex-direction: row;
+      width: 90%;
+    }
+    .about-card-two {
+      padding: 20px 0px;
+      width: 100%;
+
+      .width-70 {
+        width: 80%;
+      }
+
+      .gap-50 {
+        gap: 15px;
+      }
+      .width-20 {
+        width: 10%;
+      }
+
+      .about-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0px 0px;
+        text-align: start;
+      }
+    }
+  }
+}
+
+#footer {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .contact {
+      flex-direction: column;
+      align-items: center;
+
+      .conatact-link {
+        width: 100%;
+      }
+      .conatact-form {
+        width: 100%;
+      }
+    }
+    .copy {
       flex-direction: column;
 
-      .contact {
-        flex-direction: column;
+      ul {
+        width: 100%;
+        display: flex;
+        list-style: none;
         align-items: center;
-
-        .conatact-link {
-          width: 100%;
+        justify-content: space-between;
+        counter-reset: #b3bdc7;
+        margin-bottom: 20px;
+        li {
+          border-right: 2px solid #55595d;
+          padding: 2px 0px;
+          padding-right: 0.5rem;
+          padding-left: 0.5rem;
         }
-        .conatact-form {
-          width: 100%;
-        }
-      }
-      .copy {
-        flex-direction: column;
 
         ul {
           width: 100%;
