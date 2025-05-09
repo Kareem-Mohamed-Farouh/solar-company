@@ -1,3 +1,5 @@
+/* main font style */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap");
 * {
@@ -5,6 +7,8 @@
   margin: 0px;
   padding: 0px;
 }
+
+/* general class */
 :root {
   --main-color: #0b9586;
   --main-color-light: #3be0cd;
@@ -14,15 +18,16 @@
 body {
   font-family: "Inter", sans-serif;
   --font-two: "Comic Relief", system-ui;
-
   background-color: #f9fcfd;
   line-height: 100%;
   font-size: 18px;
   overflow: auto;
 }
+
 .p-0-150 {
   padding: 0px 150px !important;
 }
+
 .p-150-0 {
   padding: 150px 0px !important;
 }
@@ -31,6 +36,7 @@ body {
   margin: auto;
   padding: 80px 150px;
 }
+
 .btn-style {
   padding: 12px 34px;
   border-radius: 109px;
@@ -45,14 +51,17 @@ body {
 .p-24 {
   padding: 24px;
 }
+
 .col-3 {
   width: calc(100% / 3 - 20px);
   overflow: hidden;
   margin: 30px 0px 0px 0px;
 }
+
 .col-2 {
   width: calc(100% / 2 - 30px);
 }
+
 .d-flex {
   display: flex;
   flex-direction: row;
@@ -65,9 +74,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .gap-20 {
   gap: 24px;
 }
+
 .gap-32 {
   gap: 32px;
 }
@@ -75,6 +86,7 @@ body {
 .align-start {
   text-align: start !important;
 }
+
 .main-text-style {
   font-weight: 400;
   font-size: 16px;
@@ -83,6 +95,7 @@ body {
   width: 100%;
   color: #475467;
 }
+
 .btn {
   padding: 12px 34px;
   border-radius: 109px;
@@ -94,13 +107,16 @@ body {
   letter-spacing: 8%;
   background-color: #ffbb1c;
 }
+
 .card-imgg {
   width: 70px;
   height: 70px;
 }
+
 img {
   transition: all 0.4s;
 }
+
 .header-section {
   font-weight: 600;
   font-size: 42px;
@@ -110,6 +126,7 @@ img {
   color: #101828;
   text-align: center;
 }
+
 p + a {
   display: flex;
   gap: 10px;
@@ -121,6 +138,7 @@ p + a {
     color: var(--main-color-light);
   }
 }
+
 .card-title {
   font-weight: 600;
   font-size: 20px;
@@ -137,12 +155,13 @@ p + a {
   font-family: var(--font-two);
 }
 
+/* navbar style */
+
 nav.navbar {
   width: 100%;
   background-color: var(--main-color);
   color: #ffffff;
   padding: 16px 150px;
-
   .nav-container {
     display: flex;
     justify-content: space-between;
@@ -151,6 +170,7 @@ nav.navbar {
     .logo {
       width: 20%;
     }
+
     .nav-links {
       width: 50%;
       display: flex;
@@ -176,7 +196,6 @@ nav.navbar {
           font-weight: 600;
           background-color: #0000000f;
           border-bottom: 3px solid #0000004d;
-
           /* background-color:#0b6359  ; */
           /* border-bottom: 3px solid #0b6359;  */
           /* box-shadow: 1px 4px 1px 1px #065249; */
@@ -208,6 +227,8 @@ nav.navbar {
     }
   }
 }
+
+/* sections style */
 
 main {
   #home {
@@ -358,6 +379,7 @@ main {
     width: 100%;
     overflow: hidden;
     margin: auto;
+
     h2 + p {
       text-align: center;
       margin-top: 16px;
@@ -375,9 +397,10 @@ main {
       background-color: white;
       overflow: hidden;
       border-radius: 5px;
+      background: #3cab900d;
+
       .card-image {
         width: 100%;
-
         border: none;
         object-fit: cover;
       }
@@ -427,17 +450,20 @@ main {
       }
     }
   }
+
   .border-green {
     border: 2px solid var(--main-color);
     border-radius: 12px;
     padding: 24px;
     background-color: #ffffff;
     transition: all 0.5s;
+    background: #3cab900d;
 
     &:hover {
       background-color: #ffffff;
       box-shadow: 0px 0px 2px 1px #18dfc8;
       border: 2px solid #05a895;
+      background: #3cab8f15;
     }
     overflow: hidden;
     &:hover img {
@@ -446,8 +472,8 @@ main {
   }
 
   #energy {
+    background: #ffbb1c0d;
     display: flex;
-    background-color: #ffffff;
     width: 100%;
     justify-content: space-between;
     .text-energy {
@@ -545,7 +571,7 @@ main {
     }
   }
 }
-
+/* Footer style */
 #footer {
   background: #283646;
   color: #fff;
