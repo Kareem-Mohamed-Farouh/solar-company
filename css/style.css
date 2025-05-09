@@ -20,16 +20,16 @@ body {
   --font-two: "Comic Relief", system-ui;
   background-color: #f9fcfd;
   line-height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   overflow: auto;
 }
 
 .p-0-150 {
-  padding: 0px 150px !important;
+  padding: 0px 150px;
 }
 
 .p-150-0 {
-  padding: 150px 0px !important;
+  padding: 150px 0px;
 }
 
 .container {
@@ -53,9 +53,9 @@ body {
 }
 
 .col-3 {
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 30px);
   overflow: hidden;
-  margin: 30px 0px 0px 0px;
+  margin: 30px auto 0px auto;
 }
 
 .col-2 {
@@ -97,7 +97,7 @@ body {
 }
 
 .btn {
-  padding: 12px 34px;
+  padding: 12px 20px;
   border-radius: 109px;
   gap: 10px;
   border: none;
@@ -141,18 +141,18 @@ p + a {
 
 .card-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 0.525rem;
   line-height: 30px;
   letter-spacing: 0%;
-}
 
-.card-title span {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
-  color: #84bd3a;
-  letter-spacing: 4px;
-  font-family: var(--font-two);
+  span {
+    font-weight: 500;
+    font-size: inherit;
+    line-height: 40%;
+    color: #84bd3a;
+    letter-spacing: 4px;
+    font-family: var(--font-two);
+  }
 }
 
 /* navbar style */
@@ -390,10 +390,11 @@ main {
       flex-wrap: wrap;
       justify-content: space-between;
       margin: auto;
-      gap: 0px;
     }
     .card {
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       background-color: white;
       overflow: hidden;
       border-radius: 5px;
@@ -416,7 +417,7 @@ main {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 505px;
+    min-height: 505px;
     width: 100%;
     padding: 80px 300px;
     display: flex;

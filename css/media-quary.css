@@ -1,58 +1,39 @@
 @media only screen and (max-width: 600px) {
   .p-0-150 {
-    padding: 0px 20px;
+    padding: 0px 10px;
   }
   .p-150-0 {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 
   .container {
     margin: auto;
-    padding: 50px 20px;
+    padding: 50px 10px;
   }
   .btn-style {
     padding: 6px 12px;
   }
 
-  .p-24 {
-    padding: 24px;
-  }
-  .col-3 {
-    width: calc(100% / 3 - 20px);
-    /* overflow: hidden; */
-    /* margin: 30px 0px 0px 0px; */
-  }
-  .col-2 {
-    width: calc(100% / 2 - 15px);
-  }
-
-  .gap-20 {
-    gap: 20px;
-  }
-  .gap-32 {
-    gap: 25px;
-  }
-
   .main-text-style {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0%;
     width: 100%;
     color: #475467;
   }
 
   .header-section {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .card-title {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   nav.navbar {
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px 10px;
 
     .nav-container {
       flex-direction: column;
@@ -96,7 +77,8 @@ main {
       width: 100%;
 
       h2 {
-        font-size: 42px;
+        font-size: 40px;
+        width: 100%;
       }
     }
   }
@@ -131,21 +113,23 @@ main {
   }
 
   #power {
+    padding: 0.8125rem;
     .header-power {
-      width: 80%;
+      width: 100%;
       text-align: left;
     }
   }
 
   #repairs {
-    gap: 0.625rem;
-    padding: 30px 10px;
+    gap: 0.225rem;
+    padding: 30px 5px;
     .bg-repairs {
-      margin: 0.1rem;
-      background-color: hsla(180, 9%, 2%, 0.354);
+      background-color: hsla(180, 9%, 2%, 0.455);
       padding: 10px;
     }
     p {
+      line-height: normal;
+      letter-spacing: normal;
       font-size: 10px;
       font-weight: 400;
     }
@@ -177,7 +161,7 @@ main {
   #about {
     .about-card-one {
       flex-direction: row;
-      width: 90%;
+      width: 100%;
     }
     .about-card-two {
       padding: 20px 0px;
@@ -382,6 +366,7 @@ main {
     }
 
     #power {
+      padding: 0rem 9.375rem;
       .header-power {
         width: 80%;
         text-align: left;
@@ -582,6 +567,9 @@ main {
     #home {
       padding: 0px 40px;
       .home-text {
+        h2 {
+          font-size: 3.25rem;
+        }
         width: 90%;
       }
     }
@@ -625,7 +613,7 @@ main {
     #repairs {
       padding: 30px 50px;
       .bg-repairs {
-        margin: 2rem;
+        margin: 1.5rem;
         background-color: hsla(180, 9%, 2%, 0.354);
         padding: 20px;
       }
